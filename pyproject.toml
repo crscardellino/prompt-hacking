@@ -1,0 +1,37 @@
+[project]
+name = "prompt-hacking"
+description = "Material del curso 'Prompt Hacking' @ Ekoparty 2025"
+authors = [
+    { name = "Cristian Cardellino", email = "crscardellino@gmail.com" }
+]
+requires-python = ">=3.12"
+dynamic = ["version"]
+dependencies = [
+    "jupyterlab>=4.4.3",
+    "jupyterlab-rise>=0.43.1",
+]
+
+[tool.ruff]
+extend-exclude = [
+    "__pycache__/",
+    ".*env/",
+    "*env/",
+]
+line-length = 100
+indent-width = 4
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E203", "E501", "E701"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.13",
+]
