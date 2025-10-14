@@ -1,6 +1,5 @@
 # Environment Setup
 
-This notebook explains how to install all the preriquistes and libraries that you will need to run the following tutorials. If you can execute all the following cells, you are good to go.
 ## Table of contents
 
 * [Prerequisites](#Prerequisites)
