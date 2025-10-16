@@ -61,7 +61,13 @@ To create and sync the virtual environment for your project using `uv`, from the
 $ uv sync
 ```
 
-By default, this command creates a directory named `.venv` in your current directory and install all dependencies on it.
+By default, this command creates a directory named `.venv` in your current directory and install all main dependencies on it.
+
+If you want to run the examples in the notebooks you need to add the extra:
+
+```bash
+$ uv sync --extra examples
+```
 
 #### Activating the Virtual Environment
 

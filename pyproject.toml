@@ -11,6 +11,14 @@ dependencies = [
     "jupyterlab-rise>=0.43.1",
 ]
 
+[project.optional-dependencies]
+examples = [
+    "pydantic>=2.12.2",
+    "pydantic-ai-slim[openai]>=1.1.0",
+    "requests>=2.32.4",
+    "rich[jupyter]>=14.2.0",
+]
+
 [tool.ruff]
 extend-exclude = [
     "__pycache__/",
